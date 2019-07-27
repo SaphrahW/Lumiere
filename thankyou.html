@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Thank You for Applying!</title>
+</head>
+<style type="text/css">
+	@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+.email-signup-thankyou{
+  font-family:sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  background: white;
+  padding:10%;
+  
+  .content{
+    margin: auto;  /* Magic! */
+    max-width:700px;
+    color:#333;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.55), 0 3px 6px rgba(0,0,0,0.23);
+    background:url('https://www.crafta.co.il/images/paper-plane.gif') no-repeat #fff;
+    background-position: right 5px bottom 5px;
+    background-size: 10em;
+    text-align:center;
+    position: relative;
+    padding:10%;
+    border-radius:5px;
+
+    .left-hole,.right-hole{
+      position: absolute;
+      width:20px; height:20px;
+      background:#333;
+      border-radius:50%;
+      top:15px;
+    }
+    .left-hole{
+      left:15px;
+      top:10px;
+    }
+    .right-hole{
+      right:15px;
+      top:10px;
+    }
+    h2,h3{
+      text-align:left;
+      padding:5% 5% 0% 3%;
+      color:#333;
+      font-weight:900;
+    }
+    .main-content{
+      > h1 {
+        color:#333;
+        text-transform:uppercase;
+        margin-top:-2%;
+        font-size:2.5em;
+        font-weight:900;
+      }
+    }
+  }
+}
+</style>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="header-custom email-signup-thankyou">
+  <div class="content">
+    <div class="left-hole"></div>
+    <div class="right-hole"></div>
+    <div class="main-content">
+      <h1>Success! Thank you!</h1>
+      <p>Thank you for Applying, it means a lot to us, just like you do! We really appreciate you giving us a moment of your time.</p>
+      <p class="strong">More information can be found in your welcome email.</p>
+
+      <h3>Next steps & what to expect:</h3>
+      <ul>
+        <li>Refer to the Policy Progress Page to Track your Policy's Progress</li>
+        <li>Check your email for confirmation of Completion</li>
+      </ul>
+      <a href = "file:///C:/Users/david/OneDrive/Desktop/Portal/Menu/Menu.html"> Back to Menu </a>
+    </div>
+
+  </div>
+</div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+
+
+</html>

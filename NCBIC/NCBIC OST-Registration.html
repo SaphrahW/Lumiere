@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+head{
+  background: url(ncbic logo.jpg) ;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background:white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 10px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: darkblue;
+  color: white;
+  padding: 13px 15px;
+  margin: 6px 0;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover 
+{
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+{
+  color: darkblue;
+}
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color:white;
+  text-align: center;
+}
+
+.container img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background:white;
+}
+
+  h1
+  {
+    background-color:darkblue;
+    padding:20px;
+  }
+</style>
+</head>
+<body>
+
+<form action="/action_page.php">
+  <h1>
+
+  </h1>
+  <h2>
+    <a href= "NCBIC/ncbic logo.jpg">
+      <img src="ncbic logo.jpg" alt="NCBIC">
+      </a>
+   </h2> 
+
+    <h3>Register</h3>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    </hr>
+    <p>
+    By clicking on Register, you agree to NCBIC's<a href="https://www.jncb.com/Special-Pages/Privacy-Policy"><em><strong> Terms and Conditions of Use</strong></em></a>
+    </p>
+    <button type="submit" class="registerbtn"><a href="NCBIC OST-Application.html">Register</a></button>
+   
+   <div class="container signin">
+    <p>Already have an account? <a href="file:///C:/Users/david/OneDrive/Desktop/Portal/Login_v5/index.html">Sign in</a>.</p>
+  </div>
+</form>
+</body>
+</html>

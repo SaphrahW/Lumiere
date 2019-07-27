@@ -1,0 +1,40 @@
+body{
+	background: #DC143C;
+	max-width: 550px;
+	background: #FFE4C4;
+	padding: 35px;
+	margin: 30px auto;
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.35);
+	border-radius: 15px;
+	border: 8px solid  #FF7F50 ;
+}
+
+h2{
+	text-align: center;
+	font-family:"Veranda";
+	text-underline-position: under;
+}
+
+input[type="submit"] {
+	-moz-box-shadow: inset 0px 2px 0px 0px #A9A9A9;
+	-webkit-box-shadow: inset 0px 2px 0px 0px #A9A9A9;
+	box-shadow: inset 0px 2px 0px 0px #A9A9A9;
+	background-color: #00008B;
+	border: 1px solid #17445E;
+	display: inline-block;
+	cursor: pointer;
+	color: #7FFF00;
+	padding: 8px 18px;
+	text-decoration: none;
+	font: 12px Arial, Helvetica, sans-serif;
+}
+
+.submitwrapper{
+	text-align: center;
+}
+
+input[type="button"]:hover, 
+input[type="submit"]:hover {
+	background: linear-gradient(to bottom, #BDB76B 5%, #DC143C 100%);
+	background-color: #FAEBD7;
+}
